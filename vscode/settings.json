@@ -1,0 +1,57 @@
+{
+    "git.autofetch": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.startupEditor": "none",
+    "remote.autoForwardPortsSource": "hybrid",
+    "workbench.editorAssociations": {
+        "*.parquet": "default"
+    },
+    "workbench.colorTheme": "Night Owl Theme",
+    "explorer.confirmDragAndDrop": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "bicepparam": false,
+        "python": true,
+        "properties": false,
+        "env": false
+    },
+    "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+
+    ],
+    "github.copilot.advanced": {
+
+    },
+    "vscode-neovim.logOutputToConsole": true,
+    "vscode-neovim.neovimInitVimPaths.win32": "nvim",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/mkuelker/.config/nvim/init.lua",
+    "vscode-neovim.wslDistribution": "Ubuntu",
+    "vscode-neovim.useWSL": true,
+    "vscode-neovim.ctrlKeysForInsertMode": [
+        "a",
+        "c",
+        "d",
+        "h",
+        "j",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u",
+        "w",
+        "k"
+    ],
+    "vscode-neovim.compositeKeys": {
+        "jk": {
+            "command": "vscode-neovim.escape",
+        },
+    },
+    "editor.accessibilitySupport": "off"
+}
+
