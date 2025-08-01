@@ -1,3 +1,4 @@
+
 -- Add Basic Bindings
 vim.keymap.set("i", "jk", "<Esc>")
 vim.opt.clipboard = 'unnamedplus'
@@ -28,3 +29,13 @@ vim.keymap.set("n", "[", "}", { desc = "Jump to next block" })
 vim.keymap.set("n", "]", "{", { desc = "Jump to previous block" })
 -- Make x not yank (send to black hole register)
 vim.keymap.set("n", "x", '"_dd', { desc = "Delete without yanking" })
+
+-- add select all 
+vim.keymap.set("n", "<leader>a", "ggvVG", { desc = "select all" })
+
+-- add paste in insert
+vim.keymap.set("i", "<leader>v", '<c-r>+', { desc = "paste from system clipboard (insert)" })
+
+-- add fwd search
+vim.keymap.set("n", "<leader>f", "/", { noremap = true, desc = "Search forward" })
+vim.keymap.set("n", "<leader>v", "V", { noremap = true, desc = "better select" })
