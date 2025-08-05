@@ -1,26 +1,29 @@
-[colors.bright]
-black = "0x75715e"
-blue = "0x66d9ef"
-cyan = "0x38ccaa"
-green = "0xa6e22e"
-magenta = "0xae81ff"
-red = "0xf92672"
-white = "0xf9f8f5"
-yellow = "0xf4bf75"
-
-[colors.normal]
-black = "0x272822"
-blue = "0x66d9ef"
-cyan = "0x38ccaa"
-green = "0xa6e22e"
-magenta = "0xae81ff"
-red = "0xf92672"
-white = "0xf8f8f2"
-yellow = "0xf4bf75"
-
+# Default colors
 [colors.primary]
-background = "0x272822"
-foreground = "0xf8f8f2"
+background = '#2D2A2E'
+foreground = '#fff1f3'
+
+# Normal colors
+[colors.normal]
+black   = '#2c2525'
+red     = '#fd6883'
+green   = '#adda78'
+yellow  = '#f9cc6c'
+blue    = '#f38d70'
+magenta = '#a8a9eb'
+cyan    = '#85dacc'
+white   = '#fff1f3'
+
+# Bright colors
+[colors.bright]
+black   = '#72696a'
+red     = '#fd6883'
+green   = '#adda78'
+yellow  = '#f9cc6c'
+blue    = '#f38d70'
+magenta = '#a8a9eb'
+cyan    = '#85dacc'
+white   = '#fff1f3'
 
 [cursor.style]
 blinking = "On"
@@ -50,7 +53,49 @@ args = ["--login", "-i"]
 program = 'C:\Program Files\Git\bin\bash.exe'
 
 [window]
-decorations = "none"
+decorations = "full"
+opacity = 0.95
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+[window.padding]
+x = 10
+y = 10
+
+[terminal]
+
+
+[cursor.style]
+blinking = "On"
+shape = "Beam"
+
+[font]
+size = 12.5
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[terminal.shell]
+args = ["--login", "-i"]
+program = 'C:\Program Files\Git\bin\bash.exe'
+
+[window]
+decorations = "full"
 opacity = 0.95
 
 [window.dimensions]
