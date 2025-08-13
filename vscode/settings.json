@@ -1,16 +1,12 @@
 {
-    "git.autofetch": true,
+    "workbench.colorTheme": "Monokai Pro",
+    "@azure.argTenant": "",
+    "security.workspace.trust.untrustedFiles": "open",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
-    "workbench.startupEditor": "none",
-    "remote.autoForwardPortsSource": "hybrid",
-    "workbench.editorAssociations": {
-        "*.parquet": "default"
-    },
-    "workbench.colorTheme": "Night Owl Theme",
-    "explorer.confirmDragAndDrop": false,
-    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.sideBar.location": "right",
+        "github.copilot.nextEditSuggestions.enabled": true,
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
@@ -47,11 +43,43 @@
         "w",
         "k"
     ],
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.saveAndClose",
+            "sequence": [
+                "workbench.action.files.save",
+                "workbench.action.closeActiveEditor"
+            ]
+        }
+    ],
     "vscode-neovim.compositeKeys": {
         "jk": {
             "command": "vscode-neovim.escape",
         },
+        "jl": {
+          "command": "workbench.action.quickOpen",
+        },
+        "j;" : {
+            "command": "workbench.action.showCommands"
+        },
+        "qq": {
+            "command": "multiCommand.saveAndClose"
+        },
+        "zd": {
+            "command": "editor.action.goToDeclaration"
+        },
+        "lj": {
+            "command": "cursorHome" 
+        }
     },
-    "editor.accessibilitySupport": "off"
+    "editor.accessibilitySupport": "off",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "git.autofetch": true,
+    "remote.autoForwardPortsSource": "hybrid",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "editor.lineNumbers": "relative",
+    "workbench.editor.empty.hint": "hidden",
+    "notebook.lineNumbers": "on"
 }
-
